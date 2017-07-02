@@ -21,3 +21,16 @@ function comparison(a, b) {
 }
 
 console.log ( comparison (2, 2) );
+
+var i = 0;
+
+while (i < 50) {
+    console.log( i + 1 );
+    i++;
+}
+
+var i;
+
+for (i = 0; i < 50; i++) {
+    console.log( i + 1 );
+}
