@@ -66,3 +66,14 @@ function getMorebutLess() {
 }
 
 getMorebutLess();
+
+function converttoString() {
+    var arr = ['я', 'учу', 'javascript', '!'];
+    var str1 = arr.join('+');
+    var str2 = arr.join(' ');
+
+    console.log (str1);
+    console.log (str2);
+}
+
+converttoString();
