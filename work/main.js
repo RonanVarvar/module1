@@ -14,10 +14,7 @@ function pow(x, n) {
 console.log( pow(2, 5) );
 
 function comparison(a, b) {
-    if (a === b) {
-        return true;
-    }
-    return false;
+    return (a === b);
 }
 
 console.log ( comparison (2, 2) );
@@ -34,3 +31,4 @@ var i;
 for (i = 0; i < 50; i++) {
     console.log( i + 1 );
 }
+
