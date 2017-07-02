@@ -108,3 +108,11 @@ function asynchronousProcessing () {
 }
 
 asynchronousProcessing ();
+
+(function() {
+    var a = b;
+    var b = 5;
+    
+    console.log(b);
+})();
+
