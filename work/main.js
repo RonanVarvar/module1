@@ -96,3 +96,11 @@ function addToEnd() {
 }
 
 addToEnd();
+
+var arr = [1, 2, 3, 4, 5, 6 ];
+
+arr.forEach(function (i) {
+    setTimeout(function () {
+        console.log(i)
+    }, 0, i)
+})
