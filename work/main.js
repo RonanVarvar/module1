@@ -51,4 +51,18 @@ function definationofCapitals () {
         console.log( key + " - это " + obj[key] );
     }
 }
+
 definationofCapitals ();
+
+function getMorebutLess() {
+    var arr = [2, 5, 9, 15, 0, 4];
+    var i;
+
+    for (i = 0; i < arr.length; i++) {
+       if (arr[i] < 10 && arr[i] > 3) {
+            console.log(arr[i]);
+       }
+    }
+}
+
+getMorebutLess();
