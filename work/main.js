@@ -12,3 +12,12 @@ function pow(x, n) {
 }
 
 console.log( pow(2, 5) );
+
+function comparison(a, b) {
+    if (a === b) {
+        return true;
+    }
+    return false;
+}
+
+console.log ( comparison (2, 2) );
