@@ -87,3 +87,12 @@ function combine() {
 }
 
 combine();
+
+function addToEnd() {
+    var arr = ['a', 'b', 'c'];
+    var newArr = arr.concat(1, 2, 3);
+
+    console.log(newArr);
+}
+
+addToEnd();
