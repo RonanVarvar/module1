@@ -39,3 +39,16 @@ function cyclefor () {
 }
 
 cyclefor();
+
+function definationofCapitals () {
+    var obj = {
+        'Оттава': 'Канада',
+        'Киев': 'Украина'
+    }
+    var key =  'Оттава';
+
+    for (key in obj) {
+        console.log( key + " - это " + obj[key] );
+    }
+}
+definationofCapitals ();
