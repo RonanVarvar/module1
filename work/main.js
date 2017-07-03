@@ -183,3 +183,14 @@ function dyeInput () {
     input1.style.color = 'red';
     input2.style.color = 'blue';
 }
+
+var click = document.getElementById('button3');
+
+click.addEventListener('click', addInput);
+
+function addInput () {
+    var parentElem = document.body;
+    var newInput = document.createElement('input');
+
+    parentElem.appendChild(newInput);
+}
