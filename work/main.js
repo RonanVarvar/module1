@@ -234,3 +234,16 @@ window.onload = function() {
         }
     }
 };
+
+var arr = [1, 2, 3, 4, 5];
+var i = 0;
+
+function recurciveFunction(arr) {
+    console.log(arr[i]);
+    i++;
+    if (i < arr.length) {
+        recurciveFunction(arr);
+    }
+}
+
+recurciveFunction(arr);
