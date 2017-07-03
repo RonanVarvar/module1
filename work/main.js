@@ -247,3 +247,12 @@ function recurciveFunction(arr) {
 }
 
 recurciveFunction(arr);
+
+function makeString() {
+    var arr = ['Hello', 'world', '!'];
+    var str = arr.join(' ');
+
+    console.log (str);
+}
+
+makeString();
