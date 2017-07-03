@@ -256,3 +256,20 @@ function makeString() {
 }
 
 makeString();
+
+function findElemMassage (elem, arr) {
+    var n = arr.length;
+    var i = 0;
+
+    while (arr[i] != elem && i < n) i++;
+
+    if (i >= n) {
+        console.log('Not found');
+    } else {
+        console.log('Present');
+    }
+}
+
+var arr = [1, 2, 5, 9, 4, 13, 4, 10];
+
+findElemMassage ( 4, arr );
