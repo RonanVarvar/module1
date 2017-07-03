@@ -194,3 +194,11 @@ function addInput () {
 
     parentElem.appendChild(newInput);
 }
+
+var inputBlur = document.getElementById('input3');
+
+inputBlur.onblur = function() {
+    var valueInput = document.getElementById('input3').value;
+
+    console.log (valueInput);
+};
