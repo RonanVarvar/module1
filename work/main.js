@@ -148,3 +148,13 @@ function getButtonName () {
 }
 
 getButtonName ();
+
+var click = document.getElementById('button');
+
+click.addEventListener('click', addTextInput);
+
+function addTextInput () {
+    var text = 'Hello World!';
+
+    document.getElementById('text').value = text;
+}
