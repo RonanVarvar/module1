@@ -112,7 +112,23 @@ asynchronousProcessing ();
 (function() {
     var a = b;
     var b = 5;
-    
+
     console.log(b);
 })();
 
+function findElem(elem, arr) {
+    var n = arr.length;
+    var i = 0;
+
+    while (arr[i] != elem && i < n) i++;
+
+    if (i >= n) {
+        console.log('Not found');
+    } else {
+        console.log([i]);
+    }
+}
+
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 19, 9, 16, 15, 65, 0];
+
+findElem ( 4, arr );
