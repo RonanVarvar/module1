@@ -171,3 +171,15 @@ function swapInput () {
     input1.value = input2Value;
     input2.value = input1Value;
 }
+
+var click = document.getElementById('button2');
+
+click.addEventListener('click', dyeInput);
+
+function dyeInput () {
+    var input1 = document.getElementById('input1');
+    var input2 = document.getElementById('input2');
+
+    input1.style.color = 'red';
+    input2.style.color = 'blue';
+}
