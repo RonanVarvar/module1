@@ -116,7 +116,7 @@ asynchronousProcessing ();
     console.log(b);
 })();
 
-function findElem(elem, arr) {
+function findElem (elem, arr) {
     var n = arr.length;
     var i = 0;
 
@@ -132,3 +132,19 @@ function findElem(elem, arr) {
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 19, 9, 16, 15, 65, 0];
 
 findElem ( 4, arr );
+
+function getButtonName () {
+    var prizes = ['A Unicorn!', 'A Hug!', 'Fresh Laundry!'];
+    var btnIndex;
+
+    for (btnIndex = 0; btnIndex < prizes.length; btnIndex++) {
+        (function (){
+            var index = btnIndex;
+            document.getElementById('btn-' + btnIndex).onclick = function () {
+            console.log(prizes[index]);
+            };
+        })();
+    }
+}
+
+getButtonName ();
