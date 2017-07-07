@@ -241,6 +241,7 @@ var i = 0;
 function recurciveFunction(arr) {
     console.log(arr[i]);
     i++;
+
     if (i < arr.length) {
         recurciveFunction(arr);
     }
@@ -257,7 +258,7 @@ function makeString() {
 
 makeString();
 
-function findElemMassage (elem, arr) {
+function findElem (elem, arr) {
     var n = arr.length;
     var i = 0;
 
@@ -272,4 +273,31 @@ function findElemMassage (elem, arr) {
 
 var arr = [1, 2, 5, 9, 4, 13, 4, 10];
 
-findElemMassage ( 4, arr );
+findElem ( 4, arr );
+
+function getNumberfromArray (arr1, arr2) {
+    var overlap;
+    var ln1 = arr1.length;
+    var ln2 = arr2.length;
+    var i;
+    var j;
+	var notfound = false;
+
+    for (i = 0; i < ln1; ++i) {
+        overlap = arr1[i];
+        for (j = 0; j < ln2; ++j) {
+            if (overlap === arr2[j]) {
+				console.log('found: ' + overlap);
+                notfound = true;
+		    } 
+		} 
+	}
+	if (notfound === false) {
+        console.log ('Not found');
+    }
+}
+
+var arr1 = [1, 2, 3, 4, 5, 6];
+var arr2 = [2, 4, 3, 7, 8];
+
+getNumberfromArray ( arr1, arr2 );
