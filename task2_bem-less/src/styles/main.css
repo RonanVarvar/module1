@@ -1,0 +1,9 @@
+h1 {
+  color: #009d3d;
+}
+.c-menu {
+  color: #cccccc;
+}
+.c-menu__item {
+  display: inline-block;
+}
