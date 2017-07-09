@@ -1,12 +1,30 @@
 @import 'variables';
 
-h1 {
-  color: @color-forestgreen;
+.c-body {
+  font-family: Calibri, SansSerif, serif;
 }
-
 .c-menu {
-  color: @color-grey;
+  background: @color-grey;
+  width: 760px;
   &__item {
     display: inline-block;
+    font-size: 14pt;
+    padding: 5px 10px 10px 5px;
+  }
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.is-active {
+  color: @color-white;
+  background-color: @color-black;
+  margin-left: -40px;
+}
+.c-hotnews {
+  width: 760px;
+  margin-top: 20px;
+  &__text-block {
+    float: right;
   }
 }

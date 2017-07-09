@@ -1,9 +1,28 @@
-h1 {
-  color: #009d3d;
+.c-body {
+  font-family: Calibri, SansSerif, serif;
 }
 .c-menu {
-  color: #cccccc;
+  background: #cccccc;
+  width: 760px;
 }
 .c-menu__item {
   display: inline-block;
+  font-size: 14pt;
+  padding: 5px 10px 10px 5px;
+}
+.c-menu__link {
+  text-decoration: none;
+  color: inherit;
+}
+.is-active {
+  color: #ffffff;
+  background-color: #000000;
+  margin-left: -40px;
+}
+.c-hotnews {
+  width: 760px;
+  margin-top: 20px;
+}
+.c-hotnews__text-block {
+  float: right;
 }

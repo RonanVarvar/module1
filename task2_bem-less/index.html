@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Module1</title>
+    <link rel="stylesheet" href="./src/styles/main.css"/>
     <link rel="stylesheet/less" type="text/css" href=".src/styles/main.less"/>
     <script src=".src/lib/less.js" type="text/javascript"></script>
-
 </head>
-<body>
+<body class="c-body">
     <h1>BEM and LESS</h1>
     <header class="c-header">
         <ul class="c-menu">
-            <li class="c-menu__item"><a class="c-menu__link is-active" href="#">Hot themes</a></li>
-            <li class="c-menu__item"><a class="c-menu__link">EURO-2016 Playoffs</a></li>
-            <li class="c-menu__item"><a class="c-menu__link">El'Classico</a></li>
+            <li class="c-menu__item is-active"><a class="c-menu__link" href="#">Hot themes</a></li>
+            <li class="c-menu__item"><a class="c-menu__link" href="#">EURO-2016 Playoffs</a></li>
+            <li class="c-menu__item"><a class="c-menu__link" href="#">El'Classico</a></li>
         </ul>
     </header>
     <main class="c-main">
@@ -26,19 +26,51 @@
                 </div>
             </div>
         </div>
+        <div class="l-block-news">
         <div class="c-lastnews">
             <h1 class="c-lastnews__head">Last News</h1>
-            <ul class="c-lastnews__newslist">
-                <li class="c-lastnews__item"></li>
-                <li class="c-lastnews__item"></li>
-                <li class="c-lastnews__item"></li>
-                <li class="c-lastnews__item"><a class="c-lastnews__link" href="#"></a></li>
-                <li class="c-lastnews__item"></li>
-                <li class="c-lastnews__item"></li>
-                <li class="c-lastnews__item"></li>
-                <li class="c-lastnews__item"></li>
-                <li class="c-lastnews__item"></li>
+            <ul class="c-lastnews__list">
+                <li class="c-lastnews__item">Real Madrid players to gaffer: up and at'em!</li>
+                <li class="c-lastnews__item">Swedes indebted to talismnic ibrahimovic marca.com</li>
+                <li class="c-lastnews__item">2016 European Championship to go ahead in France</li>
+                <li class="c-lastnews__item">
+                    <a class="c-lastnews__link" href="#">Ancelotti: "Premier League return is my no 1 choice"</a>
+                </li>
+                <li class="c-lastnews__item">Walters double secures Euro 2016 spot for Ireland</li>
+                <li class="c-lastnews__item">"They intended to set off an explosive inside the stadium" - eyewitness</li>
+                <li class="c-lastnews__item">Raul bids goodbye in style</li>
+                <li class="c-lastnews__item">Five reasons Belgium vs. Spain was called off</li>
+                <li class="c-lastnews__item">Niggles won't keep Benzema out of 'Clasico'</li>
+                <li class="c-lastnews__item">Abdeslam sucpected to have been near King Baudouin Stadium</li>
             </ul>
+        </div>
+        <div class="c-newsfeed">
+            <img class="c-newsfeed__img" src="./src/images/nf_1.jpg">
+            <span class="c-newsfeed__main">Zlatan Ibrahimovic on target as Sweden qualify with draw in Denmark</span>
+            <ul class "c-newsfeed__list">
+                <li class="c-newsfeed__item">Alvaro Morata insists Juventus are "still hungry" and targets victory ove
+                    Milan on Saturday/</li>
+                <li class="c-newsfeed__item">Ecudor stay perfect as Argentina, Brasil win</li>
+                <li class="c-newsfeed__item">Sweden, Ukraine complete Euro line-up fifa.com</li>
+                <li class="c-newsfeed__item">Aubameyand penalty gives Gabon World Cup joy</li>
+            </ul>
+        </div>
+        </div>
+        <div class="l-block-news">
+        <div class="c-photonews">
+            <div class="c-photonews__item">
+                <img class="c-photonews__img" src="./src/images/fa_1.jpg">
+                <span class="c-photonews__text">Here is how Leage Champions trophy looks like</span>
+            </div>
+            <div class="c-photonews__item">
+                <img class="c-photonews__img" src="./src/images/fa_2.jpg">
+                <span class="c-photonews__text">Casillas got some piece of paper</span>
+            </div>
+            <div class="c-photonews__item">
+                <img class="c-photonews__img" src="./src/images/fa_2.jpg">
+                <span class="c-photonews__text">Casillas got some piece of paper</span>
+            </div>
+        </div>
         </div>
     </main>
     <script src="js/main.js"></script>
